@@ -1,0 +1,95 @@
+.flex-centralizar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page-cadastro{
+    min-height: 100vh;
+    background-color: rgb(219, 220, 215);
+}
+#formulario-cadastro{
+    width: 70%;
+    min-height: 80vh;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 10px #000000;
+    background-color: rgba(95, 158, 160, 0.933);
+}
+#container-img, #container-formulario{
+    width: 50%;
+}
+#container-img{
+    min-height: 80vh;
+}
+#container-img figure{
+    height: 35vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#container-img figure h3{
+    width: 100%;
+    font-size: 20pt;
+    color: #f1f1f1ae;
+}
+#container-img figure img{
+    width: 200px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px #000000;
+    background-color: #f1f1f1;
+}
+#container-formulario{
+    display: flex;   
+    min-height: 80vh;    
+    flex-direction: column;
+    justify-content: space-between;
+}
+#container-formulario main{
+    height: 70vh;
+    font-size: 16pt;
+    color: #f1f1f1;
+}
+#container-formulario input{
+    border: none;
+    padding: 5px;
+    font-size: 16pt;
+    border-radius: .2em;
+}
+#container-formulario table{
+    margin: 0 auto;
+    border-spacing: 20px 30px;
+}
+#container-formulario main label{
+    display: block;
+    margin-bottom: 8px;
+}
+#botao-criar-conta{
+    padding: 10px;
+    cursor: pointer;
+    color: #f1f1f1;
+    text-align: center;
+    border-radius: .5em;
+    background-color: #C2A77D;
+}
+#botao-criar-conta:hover{
+    transform: scale(1.1);
+}
+#container-formulario main td[colspan="2"] input{
+    min-height: 15px;
+    min-width: 15px;
+}
+#container-formulario main td[colspan="2"] label{
+    display: inline-block;
+}
+#container-formulario header, #container-formulario h1{
+    margin: 0 auto;
+}
+#container-formulario header{
+    width: 85%;
+    font-size: 16pt;
+    color: #f1f1f1;
+    text-align: right;
+}
+#container-formulario h1{
+    width: 90%;
+    font-size: 30pt;
+}

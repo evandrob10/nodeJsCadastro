@@ -1,0 +1,87 @@
+<main id="page-cadastro" class="flex-centralizar">
+    <form id="formulario-cadastro" class="flex-centralizar">
+        <section id="container-img" class="flex-centralizar">
+            <figure class="flex-centralizar">
+                <h3>
+                    Let's Make it Happen Together!
+                </h3>
+                <img src="{{imagemPerfil}}" alt="">
+            </figure>
+        </section>
+        <section id="container-formulario">
+            <header>
+                <img src="" alt="">
+                <p>Já é cadastrado? <a href="">Clique aqui!</a></p>
+            </header>
+            <main>
+                <h1>Criar uma Conta</h1>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>Nome:</label>
+                                <input type="text" name="nome" />
+                            </td>
+                            <td>
+                                <label>Sobrenome:</label>
+                                <input type="text" name="Sobrenome"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Email:</label>
+                                <input type="text" name="email" />
+                            </td>
+                            <td>
+                                <label>Endereço:</label>
+                                <input type="text" name="endereco"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Senha:</label>
+                                <input type="password" name="senha" />
+                            </td>
+                            <td>
+                                <label>Confirmar Senha:</label>
+                                <input type="password" name="confirmarSenha"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" name="term"/>
+                                <label for="term">criando sua conta e aceitando os <a href="">termos e condições</a></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="botao-criar-conta">
+                                <p>Criar Conta</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="" alt="">
+                                <p>Cadastra-se usando o Twitter.</p>                          
+                            </td>
+                            <td>
+                                <img src="" alt="">
+                                <p>Cadastra-se usando o Twitter.</p>                          
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>&copy;Copyright {{ano}} - Evandro Barros</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </main>
+        </section>
+    </form>
+    <form>
+        <div class="img-upload" style="display: none;">
+            <input type="file" name="imagem" /> 
+            <button>Enviar</button>
+        </div>
+    </form>
+</main>
