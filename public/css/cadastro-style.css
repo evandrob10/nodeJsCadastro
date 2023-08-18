@@ -30,12 +30,14 @@
     font-size: 20pt;
     color: #f1f1f1ae;
 }
-#container-img figure img{
+#container-img figure div{
     width: 200px;
+    height: 200px;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow: 1px 1px 10px #000000;
+    background-size: cover;
     background-color: #f1f1f1;
+    box-shadow: 1px 1px 10px #000000;
 }
 #container-formulario{
     display: flex;   
@@ -76,6 +78,7 @@
 #container-formulario main td[colspan="2"] input{
     min-height: 15px;
     min-width: 15px;
+    vertical-align: middle;
 }
 #container-formulario main td[colspan="2"] label{
     display: inline-block;
@@ -92,4 +95,52 @@
 #container-formulario h1{
     width: 90%;
     font-size: 30pt;
+}
+.fundo-black{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: #15120d8a;
+}
+#container-upload div{
+    width: 25vw;
+    height: 5vh;
+    border-radius: .3em;
+    background-color: rgba(95, 158, 160, 0.631);
+}
+#container-upload div input{
+    font-size: 12pt;
+    margin-right: 20px;
+}
+#container-upload div img{
+    width: 50px;
+    cursor: pointer;
+}
+#container-upload div img:hover{
+    transform: scale(1.2);
+}
+.formatacao-popup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 10vh;
+    padding: 10px;
+    border-radius: .3em;
+    background-color: rgba(95, 158, 160, 0.631);
+}
+#container-error p , #container-error button{
+    font-size: 16pt;
+    color: #f1f1f1;
+}
+#container-error p{
+    margin-bottom: 10px;
+}
+#container-error button{
+    width: 30%;
+    border: none;
+    cursor: pointer;
+    border-radius: .3em;
+    background-color: #C2A77D;
 }

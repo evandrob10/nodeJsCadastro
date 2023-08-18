@@ -1,0 +1,32 @@
+#redirect400{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#redirect400 div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 10vh;
+    padding: 10px;
+    border-radius: .3em;
+    background-color: rgba(95, 158, 160, 0.631);
+}
+#redirect400 p,#redirect400 a{
+    font-size: 16pt;
+    color: #f1f1f1;
+}
+#redirect400 p{
+    margin-bottom: 10px;
+}
+#redirect400 a{
+    width: 30%;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: .3em;
+    background-color: #C2A77D;
+}

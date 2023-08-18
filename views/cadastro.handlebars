@@ -1,11 +1,11 @@
 <main id="page-cadastro" class="flex-centralizar">
-    <form id="formulario-cadastro" class="flex-centralizar">
+    <form id="formulario-cadastro" class="flex-centralizar" action="/add-user" method="POST">
         <section id="container-img" class="flex-centralizar">
             <figure class="flex-centralizar">
                 <h3>
                     Let's Make it Happen Together!
                 </h3>
-                <img src="{{imagemPerfil}}" alt="">
+                <div style="background-image: url('http://localhost:{{port}}/files/{{avatar}}')"></div>
             </figure>
         </section>
         <section id="container-formulario">
@@ -19,37 +19,37 @@
                     <tbody>
                         <tr>
                             <td>
-                                <label>Nome:</label>
-                                <input type="text" name="nome" />
+                                <label for="nome">Nome:</label>
+                                <input type="text" name="nome" id="nome"  required/>
                             </td>
                             <td>
-                                <label>Sobrenome:</label>
-                                <input type="text" name="Sobrenome"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label>Email:</label>
-                                <input type="text" name="email" />
-                            </td>
-                            <td>
-                                <label>Endereço:</label>
-                                <input type="text" name="endereco"/>
+                                <label for="sobrenome">Sobrenome:</label>
+                                <input type="text" name="sobrenome" id="sobrenome" required/>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label>Senha:</label>
-                                <input type="password" name="senha" />
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" id="email" required />
                             </td>
                             <td>
-                                <label>Confirmar Senha:</label>
-                                <input type="password" name="confirmarSenha"/>
+                                <label for="endereco">Endereço:</label>
+                                <input type="text" name="endereco" id="endereco" required/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="senha">Senha:</label>
+                                <input type="password" name="senha" id="senha" required/>
+                            </td>
+                            <td>
+                                <label for="confirmarSenha">Confirmar Senha:</label>
+                                <input type="password" name="confirmarSenha" id="confirmarSenha" required/>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <input type="checkbox" name="term"/>
+                                <input type="checkbox" name="term" id="term" required/>
                                 <label for="term">criando sua conta e aceitando os <a href="">termos e condições</a></label>
                             </td>
                         </tr>
@@ -78,10 +78,12 @@
             </main>
         </section>
     </form>
-    <form>
-        <div class="img-upload" style="display: none;">
-            <input type="file" name="imagem" /> 
-            <button>Enviar</button>
+    <form action="/upload-img" enctype="multipart/form-data" method="POST" id="container-upload" class="flex-centralizar fundo-black" style="display: none;">
+        <div class="flex-centralizar">
+            <input type="file" name="img-perfil" /> 
+            <img src="./img/icones/envio.png" alt="">
         </div>
     </form>
+    {{>poupError}}
+    {{>consultCep}}
 </main>

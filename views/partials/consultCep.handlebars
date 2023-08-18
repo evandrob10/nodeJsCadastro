@@ -1,0 +1,45 @@
+<div class="flex-centralizar fundo-black" id="container-consultCep" style="display: none;">
+    <div class="formatacao-popup" id="consultCep">
+        <div>
+            <label for="consultCep">CONSULTAR CEP</label>
+            <input type="text" placeholder="Digite aqui seu CEP" maxlength="9"/>
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="rua">Rua: </label>
+                        <input type="text" id="rua" disabled />
+                    </td>
+                    <td>
+                        <label for="bairro">Bairro: </label>
+                        <input type="text" id="bairro" disabled />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="numero">Numero: </label>
+                        <input type="text" id="numero" />
+                    </td>
+                    <td>
+                        <label for="cidade">Cidade: </label>
+                        <input type="text" id="cidade" disabled />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="complemento">Complemento: </label>
+                        <input type="text" id="complemento" placeholder="(Opcional)"/>
+                    </td>
+                    <td>
+                        <label for="estado">Estado: </label>
+                        <select id="estado" disabled>
+                            <option value="" selected></option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button">SALVAR</button>
+    </div>
+</div>

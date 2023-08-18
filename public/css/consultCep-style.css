@@ -1,0 +1,33 @@
+#consultCep{
+    min-height: 50%;
+}
+#consultCep select{
+    width: 100%;
+}
+#consultCep table{
+    border-spacing: 10px;
+}
+#consultCep button{
+    width: 30%;
+    height: 10%;
+    border: none;
+    cursor: pointer;
+    border-radius: .3em;
+    background-color: #C2A77D;
+}
+#consultCep input, #consultCep select{
+    padding: 5px;
+    border: none;
+    border-radius: .3em;
+}
+#consultCep div label, #consultCep td label{
+    display: block;
+    margin-bottom: 10px;
+}
+#consultCep button, #consultCep div label, #consultCep td label{
+    color: #f1f1f1;
+}
+#consultCep label, #consultCep input, #consultCep button, #consultCep select{
+    font-size: 16pt;
+}
+

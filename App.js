@@ -1,7 +1,7 @@
 const express = require("express");
 const App = express();
 //Rotas:
-const routes = require("./Routes/perfil");
+const routes = require("./Routes/appRoutes");
 
 //Config Express-Handlebars
     const handlebars = require('express-handlebars');
@@ -11,9 +11,14 @@ const routes = require("./Routes/perfil");
 //Archives static
     const path = require("path");
     App.use(express.static(path.join(__dirname,"public")));
+//Body-Parser:
+    const bodyParser = require("body-parser");
+    App.use(bodyParser.urlencoded({extended: false}));
+    App.use(bodyParser.json());
 //Routes:
     App.use("" , routes);
-
-App.listen("8081",()=>{
-    console.log(`Servidor iniciado! \nData: ${new Date()} \nurl: http://127.0.0.1:8081`);
+//Imagem perfil
+    App.use('/files', express.static('uploads'));
+App.listen(process.env.SERVER_PORT,()=>{
+    console.log(`Servidor iniciado! \nData: ${new Date()} \nurl: http://127.0.0.1:${process.env.SERVER_PORT}`);
 })

@@ -1,2 +1,9 @@
-let img = urlImg => urlImg || "./img/avatar.png";
-module.exports = img;
+let containerUploads = document.querySelector("#container-upload");
+let containerImg = document.querySelector("#container-img div");
+let imgUpload = containerUploads.querySelector("img");
+
+containerImg.addEventListener("click",()=> containerUploads.style.display = "")
+imgUpload.addEventListener("click",()=> containerUploads.submit())
+
+
+
